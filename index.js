@@ -1,1 +1,1 @@
-console.log('Hello Word')
+const root = document.querySelector('.root')
