@@ -1,7 +1,55 @@
+:root{
+  --afc-green: #01b040;
+  --dark-grey: #202021;
+  --off-white: #f5f6f6;
+}
+
 * {
   margin: 0;
+  padding: 0;
 }
 
 body{
-  background-color: #01b040;
+  background-color: var(--off-white);
+  text-align: center;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 12%;
+  width: 100%;
+  background-color: var(--dark-grey);
+  color: var(--off-white);
+}
+
+.nav-container {
+  list-style-type: none;
+  font-size: 1.5rem;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100%;
+}
+
+.logo-container {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%
+}
+
+.afc-logo {
+  padding-top: 1.5rem;
+  max-height: 115%;
 }

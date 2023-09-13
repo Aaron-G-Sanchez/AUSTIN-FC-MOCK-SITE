@@ -2,17 +2,33 @@
 const root = document.querySelector('.root')
 
 const navBar = document.createElement('nav')
-navBar.setAttribute('class', 'meanu')
+navBar.setAttribute('class', 'menu')
 
-const navBarOptions = ['The Club', 'Tickets', 'Shop']
 const navBarList = document.createElement('ul')
 navBarList.setAttribute('class', 'nav-container')
 
+const logoContainer = document.createElement('div')
+logoContainer.setAttribute('class', 'logo-container')
+
+const afcLogo = document.createElement('img')
+const logoAttributes = {
+  class: 'afc-logo',
+  src: '/images/AFC-LOGO.png'
+}
+Object.keys(logoAttributes).forEach((key) => {
+  afcLogo.setAttribute(key, logoAttributes[key])
+})
+
 root.appendChild(navBar)
 navBar.appendChild(navBarList)
+navBar.appendChild(logoContainer)
+logoContainer.appendChild(afcLogo)
 
-for (i = 0; i < navBarOptions.length; i++) {
-  let navBarItem = document.createElement('li')
-  navBarItem.innerHTML = navBarOptions[i]
+const navBarOptions = ['The Club', 'Tickets', 'Shop']
+navBarOptions.forEach((i) => {
+  const navBarItem = document.createElement('li')
+  const navBarLink = document.createElement('a')
+  navBarLink.innerHTML = i
   navBarList.appendChild(navBarItem)
-}
+  navBarItem.appendChild(navBarLink)
+})
