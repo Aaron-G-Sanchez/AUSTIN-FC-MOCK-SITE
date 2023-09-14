@@ -23,18 +23,18 @@ navBar.appendChild(navBarList)
 // navBar.appendChild(logoContainer)
 // logoContainer.appendChild(afcLogo)
 
-const navBarOptions = ['The Club', 'Tickets', 'Shop']
+const navBarOptions = ['THE CLUB', 'TICKETS', 'SHOP']
 const navBarTargets = {
   0: 'https://google.com',
   1: 'https://github.com/Aaron-G-Sanchez',
   2: 'https://www.mlsstore.com/austin-fc/t-10362219+z-9310610-350450886?_s=bm-AustinFC-AUFC-MLS-HeaderTopNav-2023'
 }
 
-navBarOptions.forEach((i, index) => {
+navBarOptions.forEach((option, index) => {
   const navBarLink = document.createElement('a')
   navBarLink.setAttribute('href', navBarTargets[index])
   const navBarItem = document.createElement('li')
-  navBarLink.innerHTML = i
+  navBarLink.innerHTML = option
   navBarItem.appendChild(navBarLink)
   navBarList.appendChild(navBarItem)
 })
