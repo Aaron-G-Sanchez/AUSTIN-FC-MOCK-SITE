@@ -22,6 +22,10 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+a:visited {
+  color: var(--off-white);
+}
+
 .menu {
   display: flex;
   align-items: center;
@@ -36,11 +40,19 @@ body::-webkit-scrollbar {
   list-style-type: none;
   font-size: 1.5rem;
   display: flex;
-  align-items: center;
-  height: 100%;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 55%;
+  width: 20%;
+  /* flex-grow: 1; */
 }
 
-.logo-container {
+.nav-container li a {
+  text-decoration: none;
+  color: var(--off-white);
+}
+
+/* .logo-container {
   flex-grow: 1;
   display: flex;
   align-items: center;
@@ -51,4 +63,5 @@ body::-webkit-scrollbar {
 .afc-logo {
   padding-top: 1.5rem;
   max-height: 110%;
-}
+} */
+
