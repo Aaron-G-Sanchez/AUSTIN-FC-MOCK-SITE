@@ -9,7 +9,6 @@ navBarList.setAttribute('class', 'nav-container')
 
 const logoContainer = document.createElement('div')
 logoContainer.setAttribute('class', 'logo-container')
-
 const afcLogo = document.createElement('img')
 const logoAttributes = {
   class: 'afc-logo',
@@ -21,8 +20,8 @@ Object.keys(logoAttributes).forEach((key) => {
 
 root.appendChild(navBar)
 navBar.appendChild(navBarList)
-navBar.appendChild(logoContainer)
-logoContainer.appendChild(afcLogo)
+// navBar.appendChild(logoContainer)
+// logoContainer.appendChild(afcLogo)
 
 const navBarOptions = ['The Club', 'Tickets', 'Shop']
 navBarOptions.forEach((i) => {
