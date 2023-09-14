@@ -18,10 +18,14 @@ Object.keys(logoAttributes).forEach((key) => {
   afcLogo.setAttribute(key, logoAttributes[key])
 })
 
+const spacer = document.createElement('div')
+spacer.setAttribute('class', 'spacer')
+
 root.appendChild(navBar)
 navBar.appendChild(navBarList)
-// navBar.appendChild(logoContainer)
-// logoContainer.appendChild(afcLogo)
+navBar.appendChild(logoContainer)
+logoContainer.appendChild(afcLogo)
+navBar.appendChild(spacer)
 
 const navBarOptions = ['THE CLUB', 'TICKETS', 'SHOP']
 const navBarTargets = {

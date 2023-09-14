@@ -30,7 +30,7 @@ a:visited {
 .menu {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   height: 10%;
   width: 100%;
   background-color: var(--dark-grey);
@@ -45,7 +45,6 @@ a:visited {
   justify-content: space-around;
   height: 55%;
   width: 15%;
-  /* flex-grow: 1; */
 }
 
 .nav-container li a {
@@ -53,16 +52,20 @@ a:visited {
   color: var(--off-white);
 }
 
-/* .logo-container {
-  flex-grow: 1;
+.logo-container {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   height: 100%;
+  flex-grow: 1;
 }
 
 .afc-logo {
   padding-top: 1.5rem;
-  max-height: 110%;
-} */
+  max-height: 100%;
+}
 
+.spacer {
+  width: 15%;
+  height: 55%;
+}
